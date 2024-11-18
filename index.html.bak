@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetecor</title>
-    <!-- Update your CSS paths to be relative -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -26,32 +27,20 @@
         </header>
 
         <div class="content">
-            <!-- Content section -->
-            <div class="entry">
+            <section class="entry">
                 <div class="block block_right block1">
                     <div class="block_background"></div>
-                    <div class="text_block_content">
-                        <h3>Solar activity, Cyclones and Earthquakes: What is the Connection?</h3>
-                        <!-- Rest of your content -->
-                    </div>
-                </div>
-                <!-- Continue with all your existing content blocks -->
-            </div>
-
-           <div class="content">
-            <div class="entry">
-                <div class="block block_right block1">
-                    <div class="block_background "></div>
                     <div class="text_block_content">
                         <h3>Solar activity, Cyclones and Earthquakes: What is the Connection? </h3>
                         <p>Seismologist B. Gutenberg found out through his research the astonishing parallelism between COSmophysical phenomenon (solar activity), MEteorological phenomena (barometric pressure, cyclones) and frequency of earthquakes (TEctonic phenomena). He published his results in 1927 opening the question what those CORrelations on a planetary scale are about. As of 1967, seismologist M. Bath from Seismological Institute in Sweden found out that global process in the earth’s interior connects earthquakes to each other over entire planet (referred as seismic global concept). Båth named it sympathetic behavior while examining two gigantic earthquakes which have occurred in 1964 (M9.2, Alaska) and 1965 (M8.7, Aleutian Isl). </p>
                     </div>
                 </div>
-                <div class="block_break"></div>
-            </div>
-            <div class="scheme">
+              </section>
+			  
+			  
+             <section class="scheme">
                 <div class="block block_left block2">
-                    <div class="block_background "></div>
+                    <div class="block_background"></div>
                     <div class="text_block_content">
                         <h3>Principal concerns</h3>
                         <p>The crushing victory of the theoretical approach over the experimental approach lasted only until the theory was used to make experimentally verifiable predictions of the tectonic events. When attempts were made to verify such correlations to predict EQ researchers faced two principal questions: How do such electric (charge) global disturbances, coming from the Sun and covering whole globe, concentrate in such very small volumes of earthquakes foci? And how does the mechanical energy of huge cyclonic disturbance concentrate comparatively small volume of the earthquake focus?</p>
@@ -60,12 +49,14 @@
                 </div>
 
                 <div class="block block_right block3">
-                    <div class="block_background "></div>
+                    <div class="block_background"></div>
                     <div class="text_block_content">
-                        <h3>Flying Through Space: Circuitry of  Currents</h3>
+                        <h3>Flying Through Space: Circuitry of Currents</h3>
                         <p>Have you ever seen spectacular Northern Lights? Those are perfect visible examples of how a circuitry of  currents works all way through space at least  connecting Sun to the Earth’s upper atmosphere.</p>
                     </div>
                 </div>
+				
+				
                 <div class="block_break"></div>
                 <div class="block block_left block4">
                     <div class="block_background"></div>
@@ -74,6 +65,8 @@
                         <p>When space missions made the magnetosphere and interplanetary space accessible to physical instruments and as observational techniques advanced, it became obvious that space and, in particular, the Solar system is filled with the circuitry of currents. The conception of gigantic closed electrical circuits made it happen to calculate amplitude and phases of the solar cycle (Kuznetsov, 70's) and electric network model of solar wind interaction with Earth's magnetosphere and ionosphere (Nobel prize laureate Alfven, the 70's). NASA's fleets of fifth THEMIS spacecraft, launched in February 2007, has made important discoveries about spectacular eruptions of Northern Lights and the source of their power. The mission's discoveries include giant magnetic ropes that connect Earth's upper atmosphere to the Sun and explosions in the outskirts of Earth's magnetic field. A 'magnetic rope' is a twisted bundle of magnetic fields organized much like the twisted hemp of mariner's rope.</p>
                     </div>
                 </div>
+				
+				
                 <div class="block_break"></div>
                 <div class="block block_right block5">
                     <div class="block_background"></div>
@@ -86,6 +79,7 @@
                 </div>
                 <div class="block_break"></div>
             </div>
+			
             <div class="work">
                 <div class="block block_left block6">
                     <div class="block_background"></div>
@@ -145,7 +139,9 @@
                     </div>
                 </div>
             </div>
-            <div class="oldschool">
+            
+			
+			<section class="oldschool">
                 <h4>SE-station vs Seismograph</h4>
                 <div class="block block_left block11">
                     <div class="block_background"></div>
@@ -153,8 +149,9 @@
                         <p>The sensors are designed to be selectively sensitive. Being located in a earthquake-prone zones, sensor network organizes collected data. Cosmetecor system issues alerts days before a strong earthquake occurs.</p>
                     </div>
                 </div>
-            </div>
-            <div class="three_steps">
+            </section>
+			
+            <section class="three_steps">
                 <h4>Join us</h4>
                     <div class="step step1">
                         <div class="step_image"></div>
@@ -174,16 +171,17 @@
                         <h4>Connect</h4>
                         <div class="step_text_2">Connect the sensor to Cosmetecor network over the Internet. You will start receiving notification through our services. In case of emergency follow the orders of public administration and civil protection agency.</div>
                     </div>
-            </div>
-        </div>
-      <div class="saved">
+            </section>
+        
+       <section class="saved">
                 <div class="container_saved">
                     <span class="we_saved">People's lives should have been saved</span>
                     <span class="amount">825208</span>
                     <span class="people">since 2000 up-to-now</span>
                 </div>
-            </div>
-        </div>
+		</section>		
+      
+      </div>
             <div align="center">
             <h4>Contact us</h4>
                 <p> </p>
@@ -191,7 +189,7 @@
                 <p>request@mail.cosmetecor.org</p>
             </div>
 			
-        <footer>
+        <footer class="footer">
             <div class="footer_site_menu">
                 <div class="logo_down"></div>
                 <div class="must">
@@ -221,7 +219,6 @@
         </footer>
     </div>
 
-    <!-- Background layer -->
     <div class="background_layer">
         <div class="back_main"></div>
         <div class="back_universes"></div>
