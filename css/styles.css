@@ -1,0 +1,663 @@
+.transparent_background {
+	 background-color: #000000;
+	 opacity: 0.3;
+}
+ .text_block {
+	 position: relative;
+	 width: 440px;
+	 z-index: 600;
+}
+ .forblock_left {
+	 left: 0;
+	 position: absolute;
+}
+ .forblock_right {
+	 right: 0;
+	 position: absolute;
+}
+ .login_registration {
+	 position: relative;
+	 width: 150px;
+	 height: 36px;
+	 border: 2px solid #ffffff;
+	 background-color: rgba(0,0,0,0.5);
+	 font-size: 0.8em;
+	 line-height: 36px;
+	 text-align: center;
+}
+ .logo {
+	 background: url("../images/Cosmetecor_Logo_v1.png") no-repeat;
+	 width: 180px;
+	 height: 100px;
+	 position: relative;
+	 float: left;
+}
+ .back_visible {
+	 display: block;
+}
+ html {
+	 overflow-x: hidden;
+}
+ body {
+	 overflow: auto;
+	 height: 100%;
+	 background-color: #000000;
+	 font-family: 'opensans', helvetica, verdana;
+	 width: 100%;
+	 color: #ffffff;
+	 z-index: 0;
+	 word-wrap: break-word;
+}
+ body a {
+	 color: #ffffff;
+	 text-decoration: none;
+}
+ body a:hover {
+	 color: #cccccc;
+	 border-bottom: solid 1px #cccccc;
+}
+ body h3, body h4 {
+	 font-size: 45px;
+	 font-family: 'opensans_bold', helvetica, verdana;
+	 position: relative;
+	 margin: 0px;
+}
+ body h3 {
+	 padding-bottom: 35px;
+	 line-height: 50px;
+	 z-index: 1000;
+}
+ body h4 {
+	 text-align: center;
+}
+ body p {
+	 position: relative;
+	 line-height: 22px;
+	 font-size: 15px;
+	 padding-bottom: 15px;
+	 margin: 0px;
+	 z-index: 1000;
+}
+ body .wrapper {
+	 width: 1200px;
+	 position: relative;
+	 margin: 0 auto;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 height: 10800px;
+	 z-index: 100;
+}
+ body .wrapper .header {
+	 position: relative;
+	 height: 140px;
+}
+ body .wrapper .header .header_wrapper {
+	 width: 960px;
+	 height: 100px;
+	 position: relative;
+	 padding: 20px 0;
+	 margin: 0 auto;
+}
+ body .wrapper .header .header_wrapper .logo_up {
+	 background: url("../images/Cosmetecor_Logo_v1.png") no-repeat;
+	 width: 180px;
+	 height: 100px;
+	 position: relative;
+	 float: left;
+}
+ body .wrapper .header .header_wrapper .menu {
+	 position: relative;
+	 top: 35px;
+	 height: 30px;
+	 margin: 0 0 0 250px;
+	 width: 500px;
+	 text-transform: uppercase;
+}
+ body .wrapper .header .header_wrapper .menu li {
+	 display: inline;
+	 padding: 0 40px 0 0;
+}
+ body .wrapper .header .header_wrapper .login_registration_up {
+	 float: right;
+	 position: relative;
+	 width: 150px;
+	 height: 36px;
+	 border: 2px solid #ffffff;
+	 background-color: rgba(0,0,0,0.5);
+	 font-size: 0.8em;
+	 line-height: 36px;
+	 text-align: center;
+}
+ body .wrapper .content {
+	 position: relative;
+	 width: 960px;
+	 padding: 0 120px;
+}
+ body .wrapper .content div .block {
+	 position: relative;
+	 width: 440px;
+	 z-index: 600;
+}
+ body .wrapper .content div .block .text_block_content {
+	 position: relative;
+	 top: 40px;
+}
+ body .wrapper .content div .block .block_background {
+	 display: none;
+	 position: absolute;
+	 height: 100%;
+	 width: 440px;
+	 top: 0;
+	 padding: 40px;
+	 background-color: #000000;
+	 opacity: 0.3;
+	 z-index: 600;
+}
+ body .wrapper .content div .block_left {
+	 left: 0;
+	 position: absolute;
+}
+ body .wrapper .content div .block_left .block_background {
+	 left: -40px;
+}
+ body .wrapper .content div .block_right {
+	 right: 0;
+	 position: absolute;
+}
+ body .wrapper .content div .block_right .block_background {
+	 right: -40px;
+}
+ body .wrapper .content div .block_break {
+	 float: none;
+}
+ body .wrapper .content .entry {
+	 position: relative;
+	 height: 450px;
+}
+ body .wrapper .content .entry .block1 h3 {
+	 width: 540px;
+}
+ body .wrapper .content .scheme {
+	 height: 2600px;
+	 position: relative;
+}
+ body .wrapper .content .scheme .block2 {
+	 width: 330px;
+}
+ body .wrapper .content .scheme .block2 h3 {
+	 width: 430px;
+}
+ body .wrapper .content .scheme .block2 .block_background {
+	 width: 330px;
+}
+ body .wrapper .content .scheme .block3 {
+	 top: 780px;
+	 width: 440px;
+}
+ body .wrapper .content .scheme .block4 {
+	 top: 1300px;
+	 width: 550px;
+}
+ body .wrapper .content .scheme .block4 .block_background {
+	 width: 550px;
+	 display: block;
+}
+ body .wrapper .content .scheme .block5 {
+	 top: 1950px;
+	 width: 330px;
+}
+ body .wrapper .content .scheme .block5 h3 {
+	 width: 430px;
+}
+ body .wrapper .content .scheme .block5 .block_background {
+	 width: 330px;
+	 display: block;
+}
+ body .wrapper .content .work {
+	 position: relative;
+	 height: 1680px;
+}
+ body .wrapper .content .work .block6 {
+	 top: 430px;
+	 width: 220px;
+}
+ body .wrapper .content .work .block6 h3 {
+	 width: 320px;
+}
+ body .wrapper .content .work .block6 .block_background {
+	 width: 220px;
+	 display: block;
+}
+ body .wrapper .content .work .block7 {
+	 top: 1100px;
+	 width: 330px;
+}
+ body .wrapper .content .work .block7 h3 {
+	 width: 430px;
+}
+ body .wrapper .content .why {
+	 position: relative;
+	 height: 900px;
+}
+ body .wrapper .content .why .block8 {
+	 width: 440px;
+	 top: 300px;
+}
+ body .wrapper .content .why .block8 h3 {
+	 color: #ffffff;
+}
+ body .wrapper .content .why .block8 p {
+	 color: #ffffff;
+}
+ body .wrapper .content .why .image_why {
+	 background: url("../images/Cosmetecor_Image-EarthNet_v1.png") no-repeat center top;
+	 width: 850px;
+	 height: 850px;
+	 position: relative;
+	 left: 300px;
+	 top: 120px;
+}
+ body .wrapper .content .who {
+	 position: relative;
+	 height: 670px;
+}
+ body .wrapper .content .who .block9 h3 {
+	 width: 100%;
+	 text-align: center;
+}
+ body .wrapper .content .who .block9 .image_who {
+	 width: 100%;
+	 height: 250px;
+	 margin: 40px 0;
+	 background: url("../images/Cosmetecor_Image-Team_v1.png") no-repeat center top;
+}
+ body .wrapper .content .who .block9 .content_who_1, body .wrapper .content .who .block9 .content_who_2 {
+	 float: left;
+	 position: relative;
+	 width: 400px;
+	 margin: 0 40px;
+}
+ body .wrapper .content .city {
+	 position: relative;
+	 height: 1400px;
+}
+ body .wrapper .content .city .block10 {
+	 width: 540px;
+	 top: 300px;
+}
+ body .wrapper .content .city .block10 .block_background {
+	 width: 540px;
+	 display: block;
+}
+ body .wrapper .content .city .block10 .mymy {
+	 margin-top: 300px;
+	 height: 240px;
+}
+ body .wrapper .content .city .block10 .mymy h3 {
+	 font-size: 2.0em;
+}
+ body .wrapper .content .city .block10 .mymy h5 {
+	 font-size: 1.2em;
+}
+ body .wrapper .content .oldschool {
+	 position: relative;
+	 height: 700px;
+}
+ body .wrapper .content .oldschool .block11 {
+	 width: 440px;
+	 margin: 0 auto;
+	 position: relative;
+}
+ body .wrapper .content .oldschool .block11 .block_background {
+	 width: 440px;
+	 display: block;
+}
+ body .wrapper .content .three_steps {
+	 position: relative;
+	 height: 700px;
+}
+ body .wrapper .content .three_steps .step {
+	 position: relative;
+	 width: 300px;
+	 float: left;
+	 margin-right: 20px;
+}
+ body .wrapper .content .three_steps .step .step_image {
+	 height: 300px;
+	 width: 320px;
+	 position: relative;
+}
+ body .wrapper .content .three_steps .step .step_number {
+	 position: relative;
+	 font-size: 155px;
+	 font-weight: bold;
+	 line-height: 155px;
+	 width: 100px;
+	 height: 300px;
+	 float: left;
+}
+ body .wrapper .content .three_steps .step h4 {
+	 text-align: left;
+	 line-height: 45px;
+	 width: 200px;
+	 float: left;
+	 margin: 20px 0;
+}
+ body .wrapper .content .three_steps .step .step_text_2 {
+	 position: relative;
+	 width: 200px;
+	 float: left;
+}
+ body .wrapper .content .three_steps .step1 .step_image {
+	 background: url("../images/Cosmetecor_Image-Delivery_v1.png") no-repeat center;
+}
+ body .wrapper .content .three_steps .step2 .step_image {
+	 background: url("../images/Cosmetecor_Image-Install_v1.png") no-repeat center;
+}
+ body .wrapper .content .three_steps .step3 .step_image {
+	 background: url("../images/Cosmetecor_Image-Data_v1.png") no-repeat center;
+}
+ body .wrapper .content .news {
+	 position: relative;
+	 height: 1350px;
+}
+ body .wrapper .content .news .block_news .news_item {
+	 text-align: left;
+	 width: 300px;
+	 margin-right: 20px;
+	 float: left;
+	 margin-bottom: 50px;
+}
+ body .wrapper .content .news .block_news .news_item h4 {
+	 font-size: 35px;
+	 text-align: left;
+	 font-weight: normal;
+}
+ body .wrapper .content .news .block_news .news_item .news_annotation {
+	 font-size: 0.8em;
+}
+ body .wrapper .content .news .block_news .news_item .news_date {
+	 font-size: 0.6em;
+	 color: #999999;
+}
+ body .wrapper .content .saved {
+	 position: relative;
+	 height: 500px;
+	 text-align: center;
+}
+ body .wrapper .content .saved .container_saved {
+	 position: relative;
+	 top: 130px;
+}
+ body .wrapper .content .saved .container_saved .display {
+	 display: block;
+}
+ body .wrapper .content .saved .container_saved .we_saved {
+	 font-size: 40px;
+	 display: block;
+}
+ body .wrapper .content .saved .container_saved .amount {
+	 font-size: 200px;
+	 line-height: 200px;
+	 display: block;
+}
+ body .wrapper .content .saved .container_saved .people {
+	 font-size: 36px;
+	 display: block;
+}
+ body .wrapper .footer {
+	 top: 160px;
+	 position: relative;
+	 color: #ffffff;
+	 height: 300px;
+}
+ body .wrapper .footer a {
+	 color: #ffffff;
+}
+ body .wrapper .footer a :hover {
+	 color: #ffffff;
+}
+ body .wrapper .footer .contacts, body .wrapper .footer .social {
+	 color: #b3b3b3;
+}
+ body .wrapper .footer .contacts li span, body .wrapper .footer .social li span {
+	 width: 25px;
+	 height: 25px;
+	 display: inline-block;
+	 text-align: center;
+	 font-size: 20px;
+}
+ body .wrapper .footer .contacts li a, body .wrapper .footer .social li a {
+	 color: #b3b3b3;
+}
+ body .wrapper .footer .forblock_footer {
+	 position: relative;
+	 float: left;
+	 height: 340px;
+}
+ body .wrapper .footer .forblock_footer h4 {
+	 font-size: 1.8em;
+	 padding-bottom: 27px;
+	 text-align: left;
+}
+ body .wrapper .footer .forblock_footer ul li {
+	 padding-bottom: 17px;
+	 display: block;
+}
+ body .wrapper .footer .footer_site_menu {
+	 position: relative;
+	 float: left;
+	 height: 340px;
+	 width: 310px;
+}
+ body .wrapper .footer .footer_site_menu h4 {
+	 font-size: 1.8em;
+	 padding-bottom: 27px;
+	 text-align: left;
+}
+ body .wrapper .footer .footer_site_menu ul li {
+	 padding-bottom: 17px;
+	 display: block;
+}
+ body .wrapper .footer .footer_site_menu .logo_down {
+	 background: url("../images/Cosmetecor_Logo_v1.png") no-repeat;
+	 width: 180px;
+	 height: 100px;
+	 position: relative;
+	 float: left;
+	 left: 81px;
+	 top: -40px;
+}
+ body .wrapper .footer .footer_site_menu .must {
+	 position: absolute;
+	 top: 90px;
+	 width: 340px;
+	 height: 160px;
+}
+ body .wrapper .footer .footer_site_menu .must ul {
+	 padding-left: 95px;
+}
+ body .wrapper .footer .help {
+	 position: relative;
+	 float: left;
+	 height: 340px;
+	 width: 300px;
+}
+ body .wrapper .footer .help h4 {
+	 font-size: 1.8em;
+	 padding-bottom: 27px;
+	 text-align: left;
+}
+ body .wrapper .footer .help ul li {
+	 padding-bottom: 17px;
+	 display: block;
+}
+ body .wrapper .footer .contacts {
+	 position: relative;
+	 float: left;
+	 height: 340px;
+	 width: 390px;
+}
+ body .wrapper .footer .contacts h4 {
+	 font-size: 1.8em;
+	 padding-bottom: 27px;
+	 text-align: left;
+}
+ body .wrapper .footer .contacts ul li {
+	 padding-bottom: 17px;
+	 display: block;
+}
+ body .wrapper .footer .contacts .login_registration_down {
+	 position: relative;
+	 width: 150px;
+	 height: 36px;
+	 border: 2px solid #ffffff;
+	 background-color: rgba(0,0,0,0.5);
+	 font-size: 0.8em;
+	 line-height: 36px;
+	 text-align: center;
+	 left: 0;
+	 top: -2px;
+	 margin-bottom: 30px;
+}
+ body .wrapper .footer .social {
+	 position: relative;
+	 float: left;
+	 height: 340px;
+	 width: 200px;
+}
+ body .wrapper .footer .social h4 {
+	 font-size: 1.8em;
+	 padding-bottom: 27px;
+	 text-align: left;
+}
+ body .wrapper .footer .social ul li {
+	 padding-bottom: 17px;
+	 display: block;
+}
+ body .wrapper .footer .copyright {
+	 color: #808080;
+	 left: 95px;
+	 position: relative;
+	 top: -60px;
+	 width: 300px;
+	 height: 20px;
+	 font-size: 0.8em;
+}
+ body .background_layer {
+	 position: absolute;
+	 top: 0;
+	 margin: 0px auto;
+	 width: 100%;
+	 height: 10800px;
+	 z-index: 0;
+}
+ body .background_layer .back_main {
+	 background: url("../images/Cosmetecor_Background-Main_v1.jpg") no-repeat center top;
+	 opacity: 0.5;
+	 width: 100%;
+	 height: 3100px;
+}
+ body .background_layer .back_universes {
+	 background: url("../images/Cosmetecor_Background-Universes_v1.png") no-repeat center top;
+	 width: 100%;
+	 height: 1070px;
+	 position: absolute;
+	 top: -200px;
+}
+ body .background_layer .back_top_gradient {
+	 width: 100%;
+	 height: 1300px;
+	 position: absolute;
+	 top: 0;
+	 background: rgba(255,41,141,0.5);
+	 background: -moz-linear-gradient(top,rgba(255,41,141,0.5) 0%,rgba(255,41,141,0) 100%);
+	 background: -webkit-gradient(left top,left bottom,color-stop(0%,rgba(255,41,141,0.5)),color-stop(100%,rgba(255,41,141,0)));
+	 background: -webkit-linear-gradient(top,rgba(255,41,141,0.5) 0%,rgba(255,41,141,0) 100%);
+	 background: -o-linear-gradient(top,rgba(255,41,141,0.5) 0%,rgba(255,41,141,0) 100%);
+	 background: -ms-linear-gradient(top,rgba(255,41,141,0.5) 0%,rgba(255,41,141,0) 100%);
+	 background: linear-gradient(to bottom,rgba(255,41,141,0.5) 0%,rgba(255,41,141,0) 100%);
+	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff298d',endColorstr='#ff298d',GradientType=0);
+}
+ body .background_layer .back_atmosphere {
+	 background: url("../images/Cosmetecor_Background-Atmosphere_v1.png") repeat-x;
+	 width: 100%;
+	 height: 2600px;
+	 position: absolute;
+	 top: 1400px;
+}
+ body .background_layer .back_city_1 {
+	 background: url("../images/Cosmetecor_Background-City-1_v1.png") no-repeat center top;
+	 width: 100%;
+	 height: 3100px;
+	 position: absolute;
+	 top: 2800px;
+}
+ body .background_layer .back_block_why {
+	 background: #f38f1f;
+	 width: 100%;
+	 height: 550px;
+	 position: absolute;
+	 top: 5220px;
+}
+ body .background_layer .back_why_who_gradient {
+	 width: 100%;
+	 height: 90px;
+	 position: absolute;
+	 top: 5760px;
+	 background: #f38f1e;
+	 background: url(data:image/svg+xml;
+	base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzOGYxZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzkxMWMyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzkxMWMyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	 background: -moz-linear-gradient(top,#f38f1e 0%,#911c24 50%,#911c24 50%,#000000 100%);
+	 background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f38f1e),color-stop(50%,#911c24),color-stop(50%,#911c24),color-stop(100%,#000000));
+	 background: -webkit-linear-gradient(top,#f38f1e 0%,#911c24 50%,#911c24 50%,#000000 100%);
+	 background: -o-linear-gradient(top,#f38f1e 0%,#911c24 50%,#911c24 50%,#000000 100%);
+	 background: -ms-linear-gradient(top,#f38f1e 0%,#911c24 50%,#911c24 50%,#000000 100%);
+	 background: linear-gradient(to bottom,#f38f1e 0%,#911c24 50%,#911c24 50%,#000000 100%);
+	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38f1e',endColorstr='#000000',GradientType=0);
+}
+ body .background_layer .back_city_2 {
+	 background: url("../images/Cosmetecor_Background-City-2_v1.png") no-repeat center top;
+	 width: 100%;
+	 height: 1900px;
+	 position: absolute;
+	 top: 6080px;
+}
+ body .background_layer .back_city_3 {
+	 background: url("../images/Cosmetecor_Background-City-3_v1.png") no-repeat center top;
+	 width: 100%;
+	 height: 1193px;
+	 position: absolute;
+	 top: 6900px;
+}
+ body .background_layer .back_footer {
+	 background: url("../images/Cosmetecor_Background-Footer_v1.jpg") no-repeat center top;
+	 width: 100%;
+	 height: 1300px;
+	 position: absolute;
+	 top: 9500px;
+}
+ body .background_layer .image_scheme {
+	 background: url("../images/Cosmetecor_Image-ProtonScheme_v1.png") no-repeat center top;
+	 width: 100%;
+	 height: 3100px;
+	 position: absolute;
+	 top: 340px;
+}
+ body .background_layer .image_station {
+	 background: url("../images/Cosmetecor_Image-Station_v1.png") no-repeat center top;
+	 width: 100%;
+	 height: 3100px;
+	 position: absolute;
+	 top: 2020px;
+}
+ body .background_layer .image_old_school {
+	 background: url("../images/Cosmetecor_Image-VS_v1.png") no-repeat center top;
+	 width: 100%;
+	 height: 500px;
+	 position: absolute;
+	 top: 7900px;
+}
+ 

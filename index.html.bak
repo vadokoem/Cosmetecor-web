@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetecor</title>
+    <!-- Update your CSS paths to be relative -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_wrapper">
+                <div class="logo_up"></div>
+                <nav class="menu">
+                    <a href="day_se_table">Station</a>
+                    <a href="#">Data</a>
+                    <a href="#">Map</a>
+                    <a href="#">Blog</a>
+                    <a href="ftp_agreement">FTP</a>
+                </nav>
+                <div class="login_registration_up">
+                    <a href="login">Sign In</a> / <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Content section -->
+            <div class="entry">
+                <div class="block block_right block1">
+                    <div class="block_background"></div>
+                    <div class="text_block_content">
+                        <h3>Solar activity, Cyclones and Earthquakes: What is the Connection?</h3>
+                        <!-- Rest of your content -->
+                    </div>
+                </div>
+                <!-- Continue with all your existing content blocks -->
+            </div>
+
+           <div class="content">
+            <div class="entry">
+                <div class="block block_right block1">
+                    <div class="block_background "></div>
+                    <div class="text_block_content">
+                        <h3>Solar activity, Cyclones and Earthquakes: What is the Connection? </h3>
+                        <p>Seismologist B. Gutenberg found out through his research the astonishing parallelism between COSmophysical phenomenon (solar activity), MEteorological phenomena (barometric pressure, cyclones) and frequency of earthquakes (TEctonic phenomena). He published his results in 1927 opening the question what those CORrelations on a planetary scale are about. As of 1967, seismologist M. Bath from Seismological Institute in Sweden found out that global process in the earth’s interior connects earthquakes to each other over entire planet (referred as seismic global concept). Båth named it sympathetic behavior while examining two gigantic earthquakes which have occurred in 1964 (M9.2, Alaska) and 1965 (M8.7, Aleutian Isl). </p>
+                    </div>
+                </div>
+                <div class="block_break"></div>
+            </div>
+            <div class="scheme">
+                <div class="block block_left block2">
+                    <div class="block_background "></div>
+                    <div class="text_block_content">
+                        <h3>Principal concerns</h3>
+                        <p>The crushing victory of the theoretical approach over the experimental approach lasted only until the theory was used to make experimentally verifiable predictions of the tectonic events. When attempts were made to verify such correlations to predict EQ researchers faced two principal questions: How do such electric (charge) global disturbances, coming from the Sun and covering whole globe, concentrate in such very small volumes of earthquakes foci? And how does the mechanical energy of huge cyclonic disturbance concentrate comparatively small volume of the earthquake focus?</p>
+                        <p>Seismologists know how many earthquakes every minute are there... But seismometers have no capability of early detecting a strong earthquake within days, weeks and months before it occurs. It has been the goal of unsuccessful research for the past 130 years.</p>
+                    </div>
+                </div>
+
+                <div class="block block_right block3">
+                    <div class="block_background "></div>
+                    <div class="text_block_content">
+                        <h3>Flying Through Space: Circuitry of  Currents</h3>
+                        <p>Have you ever seen spectacular Northern Lights? Those are perfect visible examples of how a circuitry of  currents works all way through space at least  connecting Sun to the Earth’s upper atmosphere.</p>
+                    </div>
+                </div>
+                <div class="block_break"></div>
+                <div class="block block_left block4">
+                    <div class="block_background"></div>
+                    <div class="text_block_content">
+                        <h3>The circuitry of  Currents in Solar system</h3>
+                        <p>When space missions made the magnetosphere and interplanetary space accessible to physical instruments and as observational techniques advanced, it became obvious that space and, in particular, the Solar system is filled with the circuitry of currents. The conception of gigantic closed electrical circuits made it happen to calculate amplitude and phases of the solar cycle (Kuznetsov, 70's) and electric network model of solar wind interaction with Earth's magnetosphere and ionosphere (Nobel prize laureate Alfven, the 70's). NASA's fleets of fifth THEMIS spacecraft, launched in February 2007, has made important discoveries about spectacular eruptions of Northern Lights and the source of their power. The mission's discoveries include giant magnetic ropes that connect Earth's upper atmosphere to the Sun and explosions in the outskirts of Earth's magnetic field. A 'magnetic rope' is a twisted bundle of magnetic fields organized much like the twisted hemp of mariner's rope.</p>
+                    </div>
+                </div>
+                <div class="block_break"></div>
+                <div class="block block_right block5">
+                    <div class="block_background"></div>
+                    <div class="text_block_content">
+                        <h3>Proton tectogenesis</h3>
+                        <p>The earth’s hydride core and the Sun contain protons which are atoms of hydrogen. V.I. Vernadsky, prominent Russian Academician, backed the model which decrypts that :</p>
+                        <p>1) hydrogen are likely dissolved into iron during the Earth's evolution forming the light iron hydride (FeH4) core, and </p>
+                        <p>2) protons (positive charges) escape from the earth’s hydride core and rise upwards closing up the hydrogen cycling to Earth’s surface separately from the cycling of water, and then give rise to proton upwelling phenomenon, which is the rising of low energy protons from ionosphere to magnetosphere. All tectonic processes occur in the tectonosphere due to the impulsive protons migration from the Earth’s core to the crust.</p>
+                    </div>
+                </div>
+                <div class="block_break"></div>
+            </div>
+            <div class="work">
+                <div class="block block_left block6">
+                    <div class="block_background"></div>
+                    <div class="text_block_content">
+                        <h3>Underground electric station Cosmetecor</h3>
+                        <p>Historically, underground electric measurements can be traced back to classic telluric measurements, performed using long measurement lines, whose ends had lead electrodes buried in bore pits at a depth of some meters. Measuring line lengths varied from kilometers to tens of meters. Usually, a couple of measuring lines, extended along magnetic meridian and parallel, are used. Such "crosses" are being used till present time to measure magnetotelluric currents. The magnetotelluric station was successfully used in geophysical exploration, and there were unsuccessful attempts to use Magnetotelluric station for earthquake prediction.</p>
+                        <p>Cosmetecor sensor has radically innovated the way of how to look into early detecting and prediction of a strong earthquake.</p>
+                    </div>
+                </div>
+                <div class="block block_right block7">
+                    <div class="block_background "></div>
+                    <div class="text_block_content">
+                        <h3>Cosmetecor solution</h3>
+                        <p>Cosmetecor is a solution for early detecting strong earthquakes by means of a grid of underground sensors which measure electromotive forces. Proton migration (i.e. electric charge migration from Earth’s core) drives an earthquake to happen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="why">
+                <div class="block block_left block8">
+                    <div class="block_background "></div>
+                    <div class="text_block_content">
+                        <h3>Why we?</h3>
+                        <p>30 years in operation and collaboration</p>
+                        <p>•   Proton earthquake model</p>
+                        <p>•   Sensor network in Kamchatka, Altai, Crimea, Italy, South Fiji</p>
+                        <p>•   Development of EQ prediction model (ground truth)</p>
+                        <p>•   MoU for data sharing</p>
+                        <p>•   Data provider for R&D projects worldwide (South Pacific, IT, USA)</p>
+                        <h3>Join us for building resilient community</h3>
+                        <p>Extension  of Cosmetecor sensor network will succeed the main goal to save people’s lives. More sensors across the planet, less disastrous for peoples will be next tectonic calamity in seismic hazardous regions.</p>
+                    </div>
+                </div>
+                <div class="image_why"></div>
+            </div>
+            <div class="who">
+                <div class="block9">
+                    <h3>Who we are?</h3>
+                    <div class="image_who"></div>
+                    <div class="text_block_content">
+                        <div class="content_who_1">
+                            <p>Vadim Bobrovskiy, founder, he develops strategy and vision of product-service to clients (2001-present).</p>
+                        </div>
+                        <div class="content_who_2">
+                            <p>D.A. Kuznetsov, Member of the International Astronomical Union (since 1973), Inventor and expert in the early detecting and prediction earthquakes. Editor and co-author of many prepatent reports, paperson Cosmetecor technology.</p>
+                        </div>
+                            <p>Our team members cover the blend of expertise needed to fulfill global  Cosmetecor  Initiative goal. Our team implement Cosmetecor business plan by means of Service design, Back-end and Front-end Development, Data Analytics, Operations. And Management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="city">
+                <div class="block block_left block10">
+                    <div class="block_background mymy"></div>
+                    <div class="text_block_content mymy">
+                        <h3>Cosmetecor portfolio of services</h3>
+                        <h5>•   Tailored reports on targeted monitoring areas (daily, weekly)</h5>
+                        <h5>•   Early detecting and prediction alert of strong earthquakes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="oldschool">
+                <h4>SE-station vs Seismograph</h4>
+                <div class="block block_left block11">
+                    <div class="block_background"></div>
+                    <div class="text_block_content">
+                        <p>The sensors are designed to be selectively sensitive. Being located in a earthquake-prone zones, sensor network organizes collected data. Cosmetecor system issues alerts days before a strong earthquake occurs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="three_steps">
+                <h4>Join us</h4>
+                    <div class="step step1">
+                        <div class="step_image"></div>
+                        <div class="step_number">1</div>
+                        <h4>Contact us</h4>
+                        <div class="step_text_2">Wish to prepare for an earthquake? Contact us and receive instructions on how to install the sensor at your site.</div>
+                    </div>
+                    <div class="step step2">
+                        <div class="step_image"></div>
+                        <div class="step_number">2</div>
+                        <h4>Install</h4>
+                        <div class="step_text_2">Follow instructions, sensor can be deployed in a shortest time span.</div>
+                    </div>
+                    <div class="step step3">
+                        <div class="step_image"></div>
+                        <div class="step_number">3</div>
+                        <h4>Connect</h4>
+                        <div class="step_text_2">Connect the sensor to Cosmetecor network over the Internet. You will start receiving notification through our services. In case of emergency follow the orders of public administration and civil protection agency.</div>
+                    </div>
+            </div>
+        </div>
+      <div class="saved">
+                <div class="container_saved">
+                    <span class="we_saved">People's lives should have been saved</span>
+                    <span class="amount">825208</span>
+                    <span class="people">since 2000 up-to-now</span>
+                </div>
+            </div>
+        </div>
+            <div align="center">
+            <h4>Contact us</h4>
+                <p> </p>
+                <p>We are open to cooperation and requests.</p>
+                <p>request@mail.cosmetecor.org</p>
+            </div>
+			
+        <footer>
+            <div class="footer_site_menu">
+                <div class="logo_down"></div>
+                <div class="must">
+                    <ul>
+                        <li>Capabilities for early detection and prediction of strong earthquakes</li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <ul>
+                        <li><a href="about_how_it_works">How it works</a></li>
+                        <li><a href="about_sensors">Sensors</a></li>
+                        <li><a href="about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <ul>
+                        <li>For Investors</li>
+                        <li>For business</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <a href="mailto:Request@mail.cosmetecor.org">Request@mail.cosmetecor.org</a>
+                    <p>© Cosmetecor 1989-2024</p>
+                    <p>All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Background layer -->
+    <div class="background_layer">
+        <div class="back_main"></div>
+        <div class="back_universes"></div>
+        <div class="back_top_gradient"></div>
+        <div class="back_atmosphere"></div>
+        <div class="back_city_1"></div>
+        <div class="back_block_why"></div>
+        <div class="back_why_who_gradient"></div>
+        <div class="back_city_2"></div>
+        <div class="back_city_3"></div>
+        <div class="image_scheme"></div>
+        <div class="image_station"></div>
+        <div class="image_old_school"></div>
+        <div class="back_footer"></div>
+    </div>
+</body>
+</html>
