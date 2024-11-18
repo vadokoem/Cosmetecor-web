@@ -1,0 +1,818 @@
+// CONTSANT colors
+@color_white:#ffffff;
+@color_black: #000000;
+@color_orange: #f38f1f;
+
+
+// Page params
+@page_width: 1200px;
+@page_paddings: 240px;
+@content_width: @page_width - @page_paddings;
+@text_block_width: 440px;
+@text_block_width_34: @text_block_width * 3/4;
+@text_block_width_24: @text_block_width * 2/4;
+@text_block_width_54: @text_block_width * 5/4;
+
+
+
+@PageColor: @color_black;
+@BlockColor: @color_black;
+
+@InnerImageBlockColor: darken(@color_white,50%);
+@TextColor: @color_white;
+@LinkColor: @color_white;
+
+
+@BlockPadding: 70px;
+@button_border:2px solid darken(@color_white,50%);
+@background_why:@color_orange;
+
+
+@color_footer_text: @color_white;
+@color_footer_text_unimportant: darken(@color_white, 30%);
+@color_footer_text_copyright: darken(@color_white, 50%);
+
+
+.prototypeBlock {
+  /*background-color: @BlockColor;
+  border-bottom:1px solid @TextColor;*/
+}
+.transparent_background{
+  background-color: @BlockColor;
+  opacity:0.3;
+}
+
+
+.text_block{
+  position:relative;
+  width:440px;
+  .zindex(@layer6);
+}
+
+.forblock_left{
+    left: 0;
+    position: absolute;
+  //left:@BlockPadding;
+}
+.forblock_right{
+    right: 0;
+    position: absolute;
+  //right:@BlockPadding;
+}
+.login_registration{
+  position: relative;
+  width: 150px;
+  height: 36px;
+  border: 2px solid @color_white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8em;
+  line-height: 36px;
+  text-align: center;
+
+}
+.logo {
+    background: url("../images/Cosmetecor_Logo_v1.png") no-repeat;
+    width: 180px;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+
+.back_visible {
+  display: block;
+}
+
+@layer0: 0;
+@layer1: 100;
+@layer2: 200;
+@layer3: 300;
+@layer4: 400;
+@layer5: 500;
+@layer6: 600;
+
+.zindex (@layer: 1000){
+  z-index: @layer;
+}
+
+html {
+  overflow-x: hidden;
+
+}
+
+body{
+    overflow: auto;
+    height:100%;
+    background-color: @PageColor;
+    font-family: 'opensans', helvetica, verdana;
+    width: 100%;
+    color: @TextColor;
+    .zindex(@layer0);
+    word-wrap:break-word;
+
+    a {
+        color: @LinkColor;
+        text-decoration:none;
+        &:hover {
+            color: darken(@LinkColor, 20%);
+            border-bottom: solid 1px darken(@LinkColor, 20%);
+            //text-decoration: dashed 1px darken(@LinkColor, 20%);
+        }
+    }
+
+    h3, h4 {
+      font-size:45px;
+      font-family:'opensans_bold',helvetica, verdana;
+      position: relative;
+      margin: 0px;
+    }
+
+    h3 {
+        padding-bottom:35px;
+        line-height: 50px;
+        .zindex;
+    }
+    h4 {
+        text-align:center;
+    }
+    p {
+        position:relative;
+        line-height: 22px;
+        font-size: 15px;
+        padding-bottom: 15px;
+        margin: 0px;
+        .zindex;
+    }
+
+    .wrapper{
+        width: @page_width;
+        position: relative;
+        margin: 0 auto;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 10800px;
+        .zindex(@layer1);
+
+            .header, .entry, .city,.scheme,.work,.why,.who,.three_steps,.news,.saved,.footer, .oldschool {
+                .prototypeBlock;
+            }
+
+            .header{
+                position: relative;
+                height: 140px;
+
+                .header_wrapper {
+                    width: @content_width;
+                    height: 100px;
+                    position: relative;
+                    padding: 20px 0;
+                    margin: 0 auto;
+
+                    .logo_up{
+                      .logo;
+                    }
+
+                    .menu{
+                        position: relative;
+                        top: 35px;
+                        height: 30px;
+                        margin: 0 0 0 250px;
+                        width: 500px;
+                        text-transform: uppercase;
+
+                        li{
+                            display:inline;
+                            padding: 0 40px 0 0;
+                        }
+                    }
+                    .login_registration_up{
+                      float: right;
+                      .login_registration;
+                    }
+
+                }
+
+
+            }
+
+        .content {
+            position: relative;
+            width: @content_width;
+            padding: 0 @page_paddings/2;
+
+            div .block {
+
+                .text_block;
+
+                .text_block_content {
+                    position: relative;
+                    top: 40px;
+                }
+
+                .block_background {
+                    display: none;
+                    position: absolute;
+                    height: 100%;
+                    width: @text_block_width;
+                    top: 0;
+                    padding: 40px;
+                    .transparent_background;
+                    .zindex(@layer6);
+                }
+
+
+
+            }
+
+            div .block_left {
+                .forblock_left;
+
+                .block_background {
+                    left: -40px;
+                }
+
+            }
+
+            div .block_right {
+                .forblock_right;
+
+                .block_background {
+                  right: -40px;
+                }
+            }
+
+            div .block_break {
+                float: none;
+            }
+
+            .entry{
+                position: relative;
+                height: 450px;
+
+                .block1 {
+                    h3 {
+                        width: @text_block_width + 100px;
+                    }
+
+                }
+
+            }
+
+            .scheme{
+              height:2600px;
+              position: relative;
+
+                .block2{
+                    width:@text_block_width_34;
+
+                    h3 {
+                        width: @text_block_width_34 + 100px;
+                    }
+
+                    .block_background {
+                        width:@text_block_width_34;
+                    }
+                }
+                .block3{
+                  top: 780px;
+                  width: @text_block_width;
+                }
+                .block4{
+                  top: 1300px;
+                  width: @text_block_width_54;
+
+                  .block_background {
+                    width:@text_block_width_54;
+                    .back_visible;
+                  }
+                }
+                .block5{
+                  top: 1950px;
+                  width: @text_block_width_34;
+
+                  h3 {
+                    width: @text_block_width_34 + 100px;
+                  }
+
+                  .block_background {
+                    width:@text_block_width_34;
+                    .back_visible;
+                  }
+                }
+            }
+
+            .work{
+                position: relative;
+                height:1680px;
+
+                .block6{
+                    top: 430px;
+                    width:@text_block_width_24;
+
+                    h3 {
+                      width: @text_block_width_24 + 100px;
+                    }
+
+                    .block_background {
+                      width:@text_block_width_24;
+                      .back_visible;
+                    }
+
+                }
+
+                .block7{
+                    top: 1100px;
+                    width:@text_block_width_34;
+
+                    h3 {
+                      width: @text_block_width_34 + 100px;
+                    }
+
+                }
+            }
+
+            .why{
+                position: relative;
+                height:900px;
+
+                .block8{
+                    width: @text_block_width;
+                    top:300px;
+
+                    h3{
+                        color: @color_white;
+                    }
+                    p{
+                        color: @color_white;
+                    }
+                }
+                .image_why{
+                    background:url("../images/Cosmetecor_Image-EarthNet_v1.png")  no-repeat center top;
+                    width: 850px;
+                    height: 850px;
+                    position: relative;
+                    left: 300px;
+                    top: 120px
+                }
+            }
+
+            .who{
+                position: relative;
+                height:670px;
+
+                .block9{
+
+                  h3 {
+                    width: 100%;
+                    text-align: center;
+                  }
+                  .image_who{
+                    width:100%;
+                    height: 250px;
+                    margin: 40px 0;
+                    background:url("../images/Cosmetecor_Image-Team_v1.png")  no-repeat center top;
+                  }
+
+                  .content_who_1, .content_who_2{
+                    float: left;
+                    position: relative;
+                    width: 400px;
+                    margin: 0 40px;
+
+                  }
+                  .content_who_1{
+
+                  }
+                  .content_who_2{
+                  }
+
+
+                }
+            }
+
+            .city{
+                position: relative;
+                height:1400px;
+
+                .block10{
+                    width: @text_block_width + 100px;
+                    top: 300px;
+
+                    .block_background {
+                      width: @text_block_width + 100px;
+                      .back_visible;
+                    }
+                    
+                    .mymy{
+                      margin-top: 300px;
+                      height: 240px;
+                      h3 {
+                        font-size: 2.0em;
+                      }
+                      h5 {
+                        font-size: 1.2em;
+                      }
+                      
+                    }
+                    
+                    
+                }
+            }
+
+            .oldschool{
+                position: relative;
+                height:700px;
+
+                .block11{
+                  width: @text_block_width;
+                  margin: 0 auto;
+                  position: relative;
+
+                  .block_background {
+                    width:@text_block_width;
+                    .back_visible;
+                  }
+                }
+            }
+
+            .three_steps{
+              position: relative;
+              height:700px;
+
+              .step{
+                position:relative;
+                width:300px;
+                float:left;
+                margin-right: 20px;
+
+                .step_image{
+                  height: 300px;
+                  width: 320px;
+                  position: relative;
+                }
+                .step_number{
+                  position: relative;
+                  font-size: 155px;
+                  font-weight: bold;
+                  line-height: 155px;
+                  width:100px;
+                  height:300px;
+                  float: left;
+                }
+                h4 {
+                  text-align: left;
+                  line-height: 45px;
+                  width:200px;
+                  float: left;
+                  margin: 20px 0;
+
+                }
+                .step_text_2{
+                  position: relative;
+                  width: 200px;
+                  float: left;
+
+                }
+
+
+              }
+
+              .step1{
+                .step_image{
+                  background:  url("../images/Cosmetecor_Image-Delivery_v1.png") no-repeat center ;
+                }
+              }
+              .step2{
+                .step_image{
+                  background:  url("../images/Cosmetecor_Image-Install_v1.png") no-repeat center;
+                }
+              }
+              .step3{
+                .step_image{
+                  background:  url("../images/Cosmetecor_Image-Data_v1.png") no-repeat center;
+                }
+              }
+            }
+
+            .news{
+              position: relative;
+              height:1350px;
+
+              .block_news {
+
+                .news_item {
+                  text-align: left;
+                  width: 300px;
+                  margin-right: 20px;
+                  float: left;
+                  margin-bottom: 50px;
+
+                    h4 {
+                      font-size: 35px;
+                      text-align: left;
+                      font-weight: normal;
+
+                    }
+                    .news_annotation {
+                      font-size: 0.8em;
+                    }
+                    .news_date {
+                      font-size: 0.6em;
+                      color: darken(@TextColor, 40%);
+                    }
+
+                }
+              }
+
+
+
+
+            }
+
+            .saved{
+              position: relative;
+              height:500px;
+              text-align: center;
+
+              .container_saved {
+                position: relative;
+                top:130px;
+                .display {
+                  display: block;
+                }
+                .we_saved {
+                  font-size: 40px;
+                  .display;
+                }
+                .amount {
+                  font-size: 200px;
+                  line-height: 200px;
+                  .display;
+                }
+                .people {
+                  font-size: 36px;
+                  .display;
+                }
+              }
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .footer{
+
+        top: 160px;
+        position: relative;
+        color: @color_footer_text;
+
+        a {
+          color: @color_footer_text;
+
+          :hover {
+            color: @color_white;
+          }
+        }
+
+
+        height:300px;
+
+        .contacts, .social {
+          color: @color_footer_text_unimportant;
+
+          li {
+            span {
+              width: 25px;
+              height: 25px;
+              display: inline-block;
+              text-align: center;
+              font-size: 20px;
+            }
+
+            a {
+              color: @color_footer_text_unimportant;
+            }
+          }
+        }
+
+        .forblock_footer{
+          position:relative;
+          float:left;
+          height: 340px;
+
+          h4{
+            font-size: 1.8em;
+            padding-bottom: 27px;
+            text-align: left;
+          }
+
+          ul {
+
+            li {
+              padding-bottom: 17px;
+              display: block;
+            }
+          }
+
+        }
+
+        .footer_site_menu{
+          .forblock_footer;
+
+          width:310px;
+          .logo_down{
+
+            .logo;
+            left:81px;
+            top:-40px;
+          }
+          .must{
+            position: absolute;
+            top:90px;
+            width: 340px;
+            height: 160px;
+            ul{
+              padding-left:95px;
+
+            }
+          }
+
+        }
+        .help{
+          .forblock_footer;
+
+          width:300px;
+
+        }
+        .contacts{
+          position: relative;
+          .forblock_footer;
+          width:390px;
+
+          .login_registration_down{
+
+            .login_registration;
+            left:0;
+            top:-2px;
+            position: relative;
+            margin-bottom: 30px;
+          }
+
+        }
+        .social{
+          .forblock_footer;
+          width:200px;
+
+        }
+        .copyright{
+          color: @color_footer_text_copyright;
+          left: 95px;
+          position: relative;
+          top: -60px;
+          width: 300px;
+          height: 20px;
+          font-size: 0.8em;
+        }
+      }
+
+    }
+
+  .background_layer {
+    position: absolute;
+    top: 0;
+    margin: 0px auto;
+    width: 100%;
+    height: 10800px;
+    //overflow-x: hidden;
+    .zindex(@layer0);
+
+    .back_main {
+      background: url("../images/Cosmetecor_Background-Main_v1.jpg") no-repeat center top;
+      opacity: 0.5;
+      width: 100%;
+      height: 3100px;
+    }
+
+    .back_universes {
+      background: url("../images/Cosmetecor_Background-Universes_v1.png") no-repeat center top;
+      width:100%;
+      height: 1070px;
+      position: absolute;
+      top: -200px;
+    }
+
+    .back_top_gradient {
+      width: 100%;
+      height: 1300px;
+      position: absolute;
+      top: 0;
+
+      background: rgba(255,41,141,0.5);
+      background: -moz-linear-gradient(top, rgba(255,41,141,0.5) 0%, rgba(255,41,141,0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,41,141,0.5)), color-stop(100%, rgba(255,41,141,0)));
+      background: -webkit-linear-gradient(top, rgba(255,41,141,0.5) 0%, rgba(255,41,141,0) 100%);
+      background: -o-linear-gradient(top, rgba(255,41,141,0.5) 0%, rgba(255,41,141,0) 100%);
+      background: -ms-linear-gradient(top, rgba(255,41,141,0.5) 0%, rgba(255,41,141,0) 100%);
+      background: linear-gradient(to bottom, rgba(255,41,141,0.5) 0%, rgba(255,41,141,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff298d', endColorstr='#ff298d', GradientType=0 );
+    }
+    .back_atmosphere{
+      background: url("../images/Cosmetecor_Background-Atmosphere_v1.png") repeat-x;
+      width:100%;
+      height: 2600px;
+      position: absolute;
+      top:1400px;
+
+    }
+    .back_city_1{
+      background: url("../images/Cosmetecor_Background-City-1_v1.png")  no-repeat center top;
+      width: 100%;
+      height: 3100px;
+      position: absolute;
+      top: 2800px;
+    }
+    .back_block_why{
+      background: @background_why;
+      width: 100%;
+      height: 550px;
+      position: absolute;
+      top: 5220px;
+    }
+    .back_why_who_gradient {
+      width: 100%;
+      height: 90px;
+      position: absolute;
+      top: 5760px;
+
+      background: rgb(243,143,30); /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzOGYxZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzkxMWMyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzkxMWMyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top,  rgba(243,143,30,1) 0%, rgba(145,28,36,1) 50%, rgba(145,28,36,1) 50%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,143,30,1)), color-stop(50%,rgba(145,28,36,1)), color-stop(50%,rgba(145,28,36,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(243,143,30,1) 0%,rgba(145,28,36,1) 50%,rgba(145,28,36,1) 50%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(243,143,30,1) 0%,rgba(145,28,36,1) 50%,rgba(145,28,36,1) 50%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(243,143,30,1) 0%,rgba(145,28,36,1) 50%,rgba(145,28,36,1) 50%,rgba(0,0,0,1) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(243,143,30,1) 0%,rgba(145,28,36,1) 50%,rgba(145,28,36,1) 50%,rgba(0,0,0,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38f1e', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+
+    }
+    .back_city_2{
+      background: url("../images/Cosmetecor_Background-City-2_v1.png")  no-repeat center top;
+      width: 100%;
+      height: 1900px;
+      position: absolute;
+      top: 6080px;
+    }
+    .back_city_3{
+      background: url("../images/Cosmetecor_Background-City-3_v1.png")  no-repeat center top;
+      width: 100%;
+      height: 1193px;
+      position: absolute;
+      top: 6900px;
+    }
+    .back_footer{
+      background: url("../images/Cosmetecor_Background-Footer_v1.jpg")  no-repeat center top;
+      width: 100%;
+      height: 1300px;
+      position: absolute;
+      top: 9500px;
+    }
+    .image_scheme{
+      background: url("../images/Cosmetecor_Image-ProtonScheme_v1.png")  no-repeat center top;
+      width: 100%;
+      height: 3100px;
+      position: absolute;
+      top: 340px;
+    }
+    .image_station{
+      background: url("../images/Cosmetecor_Image-Station_v1.png")  no-repeat center top;
+      width: 100%;
+      height: 3100px;
+      position: absolute;
+      top: 2020px;
+    }
+    .image_old_school{
+      background: url("../images/Cosmetecor_Image-VS_v1.png")  no-repeat center top;
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      top: 7900px;
+    }
+
+
+  }
+
+}
