@@ -1,0 +1,12 @@
+%form{:name => "loginform", :id => "loginform", :method => "POST", :enctype => "Multipart/Form-Data;", :align => "center", :action => "/auth"}
+  %div{:align => "center"} #{locals[:logon]}
+  %p
+    Login:
+    %input{:type => "text", :id => "user", :name => "user", :required => "required", :value => ""}
+  %p
+    Password:
+    %input{:type => "password", :id => "pass", :name => "pass", :required => "required", :value => ""}
+  %p
+    %input{:type => "submit", :value => "Sign in"}
+  %p
+    %a{:href => "/unauth"} unauth

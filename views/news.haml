@@ -1,0 +1,82 @@
+﻿:css
+  div.right_col {
+  background-color: #e0eaea;
+  max-height: 40000px;
+  min-width: 640px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  padding-top: 2px;  
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+  table {
+  border-collapse: collapse;
+  }
+  table td, table th {
+  border: 2px solid black;
+  }
+  table tr td{
+  border-bottom: 0;
+  border-top: 0;
+  }
+  table tr th{
+  border-bottom: 0;
+  border-top: 0;
+  }
+  table tr td:first-child,
+  table tr th:first-child {
+  border-left: 0;
+  }
+  table tr td:last-child,
+  table tr th:last-child {
+  border-right: 0;
+  }
+  td img {  
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  }
+.right_col
+  %form{:name => "index", :id =>'index', :method => "POST", :enctype => "multipart/form-data"}
+
+    %h1{:align => 'center', :style => 'font-size: 48;'}
+      News
+    %hr{:size => 8, :color => 'white'}
+    -zzz = locals[:news].dup
+    -while zzz.size > 0
+      -krop = []
+      -krop << zzz.pop << zzz.pop << zzz.pop
+      %table.contents{:style => 'font-size: 26;', :cellpadding => 8}
+        %tr
+          -krop.each do |news|
+            %td{:align => 'center', :style => 'font-size: 32;', :width => '33%'}
+              -if news
+                %a{:href => "/news?id=#{news[:id]}"} #{news[:title]}
+        %tr
+          -krop.each do |news|
+            %td{:align => 'center', :style => 'font-size: 16;', :width => '33%'}
+              -if news
+                #{news[:date].strftime("%Y/%m/%d %H:%M:%S")}
+        %tr
+          -krop.each do |news|
+            %td{:height => 32, :width => '33%'}
+        %tr
+          -krop.each do |news|
+            %td{:style => 'font-size: 26; word-break: break-all;', :width => '33%'}
+              -if news
+                -z = news[:text].index("<br />")
+                -if z
+                  #{news[:text][0...z]}
+                -else
+                  #{news[:text]}
+        %tr
+          -krop.each do |news|
+            %td{:style => 'font-size: 26;', :align => 'right', :width => '33%'}
+              -if news
+                #{news[:author]}
+        -if zzz.size > 0
+          %tr
+            %td{:colspan => 3, :width => '100%'}
+              %hr{:size => 8, :color => 'white'}
+        

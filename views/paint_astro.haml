@@ -1,0 +1,62 @@
+﻿%script{:src => "/scripts/calendar.js", :type => "text/javascript"}
+%script{:src => "/scripts/linkedselect.js", :type => "text/javascript"}
+:css
+  div.right_col {
+  background-color: #e0eaea;
+  max-height: 40000px;
+  min-width: 640px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+.right_col
+  %form{:name => "paint", :id =>'paint', :method => "POST", :enctype => "Multipart/Form-Data;"}
+    %table{:width => "100%", :align => "center", :border => 0}
+      %tr
+        %td
+          Year:
+        %td
+          %input{:type => 'text', :id => 'year', :name => 'year', :value => "#{Time.now.year}"}
+      %tr
+        %td
+          Orobiton:
+        %td
+          %select{:name => "orobiton", :id => "orobiton"}
+            -locals[:orob].each_with_index do |zzz, i|
+              %option{:value => "#{i}"} #{zzz[2]}: year.#{zzz[0]} to year.#{zzz[1]}
+      %tr
+        %td
+          What paint?
+        %td
+          %select{:name => "station", :id => "station"}
+            -zerg = %w{gu1 bo1 earth_usgs earth_kam sunspot geomagn_ap hemispheric_power_polar}
+            -zerg.each do |zzz|
+              %option{} #{zzz}
+      %tr
+        %td
+          What Mg if usgs?
+        %td
+          %select{:name => "mgn", :id => "mgn"}
+            -locals[:mg].each do |a|
+              %option{} #{a[0]}<M<=#{a[1]}
+      %tr
+        %td
+          With depth-axis if usgs?
+        %td
+          %input{:type => 'checkbox', :name => 'depth', :value => 'true', :checked => 'false'}
+      %tr{:align => 'center'}
+        %td{:colspan => 2}
+          %input{:type => "submit", :value => "Paint"}
+%script{:type => 'text/javascript'}
+  var syncList1 = new syncList;
+  syncList1.dataList = {
+  -l2 = ''
+  -str = "\n"
+  -locals[:mg].each_with_index {|a, i| str += "'#{i}':'#{a[0]}<M<=#{a[1]}', \n"}
+  -l2 += "'earth_usgs':{#{str}},\n"
+  #{l2[0..-3]}
+  }
+  syncList1.sync("station", "mgn");

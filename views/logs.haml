@@ -1,0 +1,28 @@
+:css
+  div.right_col {
+  background-color: #e0eaea;
+  max-height: 40000px;
+  min-width: 640px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;  
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+  }
+.right_col
+  %form{:name => "index", :id =>'index', :method => "POST", :enctype => "multipart/form-data"}
+    %h1{:align => 'center', :style => 'font-size: 48;'}
+      LOGS
+    %table.table{:align => "center", :border => 1}
+      %tr{:align => "center"}
+        %td
+          Статус
+        %td
+          Описание
+      - locals[:srv_dem].each do |sd|
+        %tr{:align => "center"}
+          - sd.each do |hihi|
+            %td
+              #{hihi}

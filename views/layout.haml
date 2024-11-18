@@ -1,0 +1,175 @@
+﻿!!!html
+%head
+  %title Distant school Cosmic Meteo Tectonics
+  %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8'}
+  %script{:type => 'text/javascript'}
+    function show(el){
+    var s;
+    el = el.getElementByTagName("ol")[0].style;
+    s = el.display;
+    if (s == "none" || s == "") {el.display="block";}
+    else {el.display = "none";}
+    };
+  %script{:src => '/scripts/share42.js', :type => 'text/javascript'}
+%body
+  :css
+    nav {
+    font-size: 24px;
+    margin-top: -80px;
+    margin-left: 220px;
+    margin-right: 15%;
+    text-align: right;
+    }
+    nav ul ul {
+    display: none;
+    }
+    nav ul li:hover > ul {
+    display: block;
+    }
+    nav ul {
+    background: #efefef; 
+    background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+    background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+    background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+    padding: 0 20px;
+    border-radius: 10px;  
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    }
+    nav ul:after {
+    content: ""; clear: both; display: block;
+    }
+    nav ul li {
+    float: left;
+    }
+    nav ul li:hover {
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+    }
+    nav ul li:hover a {
+    color: #fff;
+    }
+    nav ul li a {
+    display: block; padding: 8px 8px;
+    color: #757575; text-decoration: none;
+    }
+    nav ul ul {
+    background: #5f6975; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+    }
+    nav ul ul li {
+    float: none;
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a; position: relative;
+    }
+    nav ul ul li a {
+    padding: 8px 8px;
+    color: #fff;
+    }	
+    nav ul ul li a:hover {
+    background: #4b545f;
+    }
+    a {
+    text-decoration: none;
+    }
+    .table {
+    font-size: 24px;
+    }
+    div.header {
+    min-width: 400px;
+    height: 128px;
+    zoom: 150%
+    }
+    html, body {
+    height: 100%;
+    }
+    .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -8em;
+    }
+    .push {
+    height: 9em;
+    }
+    .full_footer {
+    height: 4em;
+    width: 70%;
+    margin-left: 15%;   
+    margin-right: 15%;
+    zoom: 150%;   
+    }
+    div.footer {
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    background: #dbd4df;
+    display: block;
+    }
+    .footer_links{
+    margin-right: 10px;    
+    }
+    .rightimg {
+    float: left;
+    margin-left: 15%;    
+    margin-right: 32px;
+    }
+    .title_top{    
+    padding-top: 12px;
+    }
+  .wrapper
+    .header
+      .rightimg{:align => "left"}
+        %img{:src => "/img/CMT_logo.png", :border => 0, :width => 128, :height => 128}
+      .title_top
+        %h1{:align => "left"}
+          Distant school Cosmic Meteo Tectonics
+    %nav
+      %ul
+        %li
+          %a{:href => url('/')} Main
+        %li
+          %a{:href => url('/news')} News
+        %li
+          %a{:href => url('/day_se_table')} SE-measurements
+        %li
+          %a{} Geo-info
+          %ul
+            %li
+              %a{:href => url('/get_quakes')} Quakes tables
+            %li
+              %a{:href => url('/2day?data=geo-astro')} Geo-astro-info 2 day
+            %li
+              %a{:href => url('/30day?data=geo-astro')} Geo-astro-info 30 day
+            %li
+              %a{:href => url('/radiation_belt_table')} Radiation belt
+            %li
+              %a{:href => url('http://www.swpc.noaa.gov/products/ace-real-time-solar-wind')} ACE Dynamic Plots
+        -#%li
+          -#%a{} Earthquakes
+          -#%ul
+            -#%li
+              -#%a{:href => "/gapi_earthquake?mg=4-5"} Earthquakes magnitude [4;5)
+            -#%li
+              -#%a{:href => "/gapi_earthquake?mg=5-6"} Earthquakes magnitude [5;6)
+            -#%li
+              -#%a{:href => "/gapi_earthquake?mg=6-11"} Earthquakes magnitude [6;10)
+        %li
+          %a{:href => url('/gapi_lightning')} Lightnings
+          %ul
+            %li
+              %a{:href => "/gapi_lightning"} Lightnings (1 day)
+            %li
+              %a{:href => "/lightning_table"} All lightnings (table)
+        %li
+          %a{:href => url('/about')} About
+    = yield
+    .push
+  .full_footer
+    .footer{:align => 'right'}
+      %a.footer_links{:href => url('/about')} About
+      %a{:href => url('/disclaimer')} Disclaimer

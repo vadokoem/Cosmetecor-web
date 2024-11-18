@@ -1,0 +1,44 @@
+﻿:css
+  div.right_col {
+  background-color: #e0eaea;
+  max-height: 40000px;
+  min-width: 640px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+  table {
+  border-collapse: collapse;
+  }
+  table td, table th {
+  border: 2px solid black;
+  }
+  table tr td{
+  border-bottom: 0;
+  border-top: 0;
+  }
+  table tr th{
+  border-bottom: 0;
+  border-top: 0;
+  }
+  table tr td:first-child,
+  table tr th:first-child {
+  border-left: 0;
+  }
+  table tr td:last-child,
+  table tr th:last-child {
+  border-right: 0;
+  }
+.right_col
+  %form{:name => "test", :id =>'test', :method => "POST", :enctype => "multipart/form-data"}
+    %h1{:align => 'center'}
+      %a{:href => "/test/se_test?days=2&st=desp&dyn=true"} Dynamic SE-measurements 2 day
+    %h1{:align => 'center'}
+      %a{:href => "/test/se_test?days=30&st=desp&dyn=true"} Dynamic SE-measurements 30 day
+    %h1{:align => 'center'}
+      %a{:href => "/test/se_test?days=2&st=desp"} Fixed SE-measurements 2 day
+    %h1{:align => 'center'}
+      %a{:href => "/test/se_test?days=30&st=desp"} Fixed SE-measurements 30 day

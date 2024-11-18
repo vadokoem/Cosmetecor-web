@@ -1,0 +1,97 @@
+﻿:css
+  div.right_col {
+  background-color: #e0eaea;
+  max-height: 40000px;
+  min-width: 640px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+  table {
+  border-collapse: collapse;
+  }
+  table td, table th {
+  border: 2px solid black;
+  }
+  table tr td{
+  border-bottom: 0;
+  border-top: 0;
+  }
+  table tr th{
+  border-bottom: 0;
+  border-top: 0;
+  }
+  table tr td:first-child,
+  table tr th:first-child {
+  border-left: 0;
+  }
+  table tr td:last-child,
+  table tr th:last-child {
+  border-right: 0;
+  }
+.right_col
+  %form{:name => "index", :id =>'index', :method => "POST", :enctype => "multipart/form-data"}
+    %h1{:align => 'center', :style => 'font-size: 48;'}
+      Data
+    %h1{:align => 'center'}
+      %a{:href => "/day_se_table"} Dynamic SE-measurements (SEMF=, mV, direct current) and (SEMF~, mV, alternating current: 0...7kHz) plots
+    %hr{:size => 16, :color => 'white'}
+    %h1{:align => 'center', :style => 'font-size: 48;'}
+      Geo-astro-info
+    %h1{:align => 'center'}
+      %a{:href => url('/2day?data=geo-astro')} Geo-astro-info 2 day
+      %a{:href => url('/30day?data=geo-astro')} Geo-astro-info 30 day
+    %h1{:align => 'center'}
+      %a{:href => url('/radiation_belt_table')} Radiation belt
+    %h1{:align => 'center'}
+      %a{:href => url('http://www.swpc.noaa.gov/products/ace-real-time-solar-wind')} ACE Dynamic Plots
+    %hr{:size => 16, :color => 'white'}
+    %h1{:align => 'center'}
+      GOES Space Environment Monitor
+    %h1{:align => 'center'}
+      %a{:href => url('http://satdat.ngdc.noaa.gov/sem/goes/data/new_plots/latest/goes15/g15_summary_latest3days.jpg')} 3 days
+    %h1{:align => 'center'}
+      %a{:href => url('http://satdat.ngdc.noaa.gov/sem/goes/data/new_plots/latest/goes15/g15_summary_latest14days.jpg')} 15 days
+    %hr{:size => 16, :color => 'white'}
+    %h1{:align => 'center'}
+      %a{:href => url('ftp://ftp.swpc.noaa.gov/pub/warehouse/2014/2014_plots/xray/')} GOES X-ray Flux      
+    %h1{:align => 'center'}
+      %a{:href => url('ftp://ftp.swpc.noaa.gov/pub/warehouse/2014/2014_plots/satenv/')} Summary
+    %hr{:size => 16, :color => 'white'}
+    %h1{:align => 'center', :style => 'font-size: 48;'}
+      Google maps lightnings
+    %h1{:align => 'center'}
+      %a{:href => "/gapi_lightning"} Google maps with lightnings (1 day)
+      %br
+      Monitored Region: Volcanoes of the North Pacific and the Mariannas of interest to the
+      %a{:href => "http://www.avo.alaska.edu/"} Alaska Volcano Observatory.
+    %hr{:size => 16, :color => 'white'}
+  %h1{:align => 'center', :style => 'font-size: 48;'} News
+  - if locals[:news].size > 0
+    %table{:align => 'center', :width => '100%', :cellpadding => 4}
+      %tr
+        -locals[:news].each do |news|
+          %td{:align => 'center', :style => 'font-size: 32;', :width => '33%'}
+            %a{:href => "/news?id=#{news[:id]}"} #{news[:title]}
+      %tr
+        -locals[:news].each do |news|
+          %td{:align => 'center', :style => 'font-size: 16;', :width => '33%'}
+            #{news[:date].strftime("%Y/%m/%d %H:%M:%S")}
+      %tr
+        -locals[:news].each do |news|
+          %td{:height => 32, :width => '33%'}
+      %tr
+        -locals[:news].each do |news|
+          %td{:style => 'font-size: 26; word-break: break-all;', :width => '33%'}
+            -z = news[:text].index("<br />")
+            -if z
+              #{news[:text][0...z]}
+            -else
+              #{news[:text]}
+      %tr
+        -locals[:news].each do |news|
+          %td{:style => 'font-size: 26;', :align => 'right', :width => '33%'}
+            #{news[:author]}
